@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h3 {
+    @apply mb-8 text-4xl font-bold text-darkGrayishBlue md:text-5xl;
+  }
+  h5 {
+    @apply mb-2 text-2xl font-bold text-darkGrayishBlue;
+  }
+}
+
+.section-container {
+  @apply max-w-6xl mx-auto text-center px-10;
+}
+
+.section-content {
+  @apply max-w-3xl mx-auto text-grayishBlue;
+}
+
+.button-container {
+  @apply flex flex-col justify-center w-full space-y-6 text-xl text-white md:flex-row md:space-y-0 md:space-x-4;
+}
+
+.button {
+  @apply p-4 px-8 rounded-full shadow-lg duration-200 hover:opacity-80;
+}
+
+.features-container {
+  @apply flex flex-col mt-16 mb-24 space-y-12 text-xl md:mb-60 md:text-left md:pl-16 md:w-1/2;
+}
+
+.items-content {
+  @apply max-w-md text-grayishBlue;
+}
+
+.features-content {
+  @apply relative flex flex-col md:flex-row md:space-x-32;
+}
+
+.supercharge-container {
+  @apply flex flex-col items-center justify-between space-y-16 md:flex-row md:space-y-0 md:space-x-12;
+}
+
+.supercharge-items {
+  @apply flex flex-col items-center space-y-5;
+}
+
+.references-container {
+  @apply flex flex-col items-center justify-between max-w-6xl px-10 mx-auto space-y-16 my-44 md:flex-row md:space-y-0;
+}
+
+.footer-container {
+  @apply flex flex-col items-center justify-between md:flex-row;
+}
+
+.menu-social-container {
+  @apply flex flex-col items-center justify-between flex-1 mb-10 space-y-6 md:flex-row md:mb-0 md:space-y-0 text-grayishBlue;
+}
+
+.menu-container {
+  @apply flex flex-col space-y-4 md:flex-row md:ml-24 md:space-x-24 md:space-y-0;
+}
+
+.menu-content {
+  @apply flex flex-col space-y-4 text-center md:text-left;
+}
+
+body {
+  background-image: url("../images/bg-header-desktop.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (max-width: 576px) {
+  body {
+    background-image: url("../images/bg-header-mobile.png");
+  }
+}
+
+.ficon:hover {
+  filter: invert(53%) sepia(68%) saturate(434%) hue-rotate(121deg)
+    brightness(101%) contrast(94%);
+}
